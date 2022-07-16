@@ -26,7 +26,7 @@ async def text(bot, message):
     length = len(text)
     if length < 500:
         txt = await message.reply_text("Converting to handwriting...")
-        rgb = [0, 0, 0] # Edit RGB values here to change the Ink color
+        rgb = [1, 10, 0] # Edit RGB values here to change the Ink color
         try:
             # Can directly use pywhatkit module for this
             data = requests.get(
